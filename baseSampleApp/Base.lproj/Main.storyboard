@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cKU-p9-eaS">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="KMi-zi-7AU">
+            <objects>
+                <viewController storyboardIdentifier="root" id="cKU-p9-eaS" customClass="RootViewController" customModule="baseSampleApp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rIF-se-RLN"/>
+                        <viewControllerLayoutGuide type="bottom" id="4a5-vR-oIi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0R0-Be-yX8">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUE-0M-bcJ">
+                                <rect key="frame" x="214" y="123" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Vd-OR-fzn">
+                                        <rect key="frame" x="43" y="48" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Grid"/>
+                                        <connections>
+                                            <action selector="gridButtonAction:" destination="cKU-p9-eaS" eventType="touchUpInside" id="QZ6-2B-D84"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VI5-JG-jEc">
+                                        <rect key="frame" x="142" y="48" width="46" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="orbit"/>
+                                        <connections>
+                                            <action selector="orbitButtonAction:" destination="cKU-p9-eaS" eventType="touchUpInside" id="Asf-wX-Qu4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="56G-XY-QEQ"/>
+                                    <constraint firstAttribute="width" constant="240" id="Qro-vN-yNC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZUE-0M-bcJ" firstAttribute="centerX" secondItem="0R0-Be-yX8" secondAttribute="centerX" id="Ixw-b4-FRp"/>
+                            <constraint firstItem="ZUE-0M-bcJ" firstAttribute="centerY" secondItem="0R0-Be-yX8" secondAttribute="centerY" id="WMP-gZ-VRJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zfY-oz-LjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="404.34782608695656" y="685.60000000000002"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5q2-OP-7LA" customClass="RightView" customModule="baseSampleApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="51" height="117"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQH-AP-1G8">
+                    <rect key="frame" x="0.0" y="0.0" width="51" height="117"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDY-78-d2v">
+                            <rect key="frame" x="0.0" y="0.0" width="51" height="117"/>
+                            <color key="backgroundColor" red="0.75686274509999996" green="0.1529411765" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="51" id="PEu-i2-3kz"/>
+                                <constraint firstAttribute="height" constant="117" id="iL9-jt-xSl"/>
+                            </constraints>
+                            <state key="normal" title="GO">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="go:" destination="5q2-OP-7LA" eventType="touchUpInside" id="Dy4-UZ-mc7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="sDY-78-d2v" secondAttribute="bottom" id="KAR-kc-e52"/>
+                        <constraint firstAttribute="height" constant="117" id="bki-bo-hzU"/>
+                        <constraint firstItem="sDY-78-d2v" firstAttribute="top" secondItem="UQH-AP-1G8" secondAttribute="top" id="mbx-vB-c3m"/>
+                        <constraint firstItem="sDY-78-d2v" firstAttribute="centerX" secondItem="UQH-AP-1G8" secondAttribute="centerX" id="vsN-hu-h60"/>
+                        <constraint firstAttribute="width" constant="51" id="vxR-N7-m19"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <accessibility key="accessibilityConfiguration" identifier="LayerDetailTableViewCell"/>
+            <constraints>
+                <constraint firstItem="UQH-AP-1G8" firstAttribute="leading" secondItem="5q2-OP-7LA" secondAttribute="leading" id="BPZ-Ik-wvg"/>
+                <constraint firstItem="UQH-AP-1G8" firstAttribute="top" secondItem="5q2-OP-7LA" secondAttribute="top" id="G2P-Md-pxD"/>
+                <constraint firstAttribute="trailing" secondItem="UQH-AP-1G8" secondAttribute="trailing" id="Ipi-fO-vDe"/>
+                <constraint firstAttribute="bottom" secondItem="UQH-AP-1G8" secondAttribute="bottom" id="VKR-MX-q6v"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-341.5" y="-603.5"/>
+        </view>
+    </objects>
+</document>
